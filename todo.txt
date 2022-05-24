@@ -1,0 +1,5 @@
+1. Follow the file structure 
+2. Make the navbar sticky
+3. From now rest of the design will be inside consumer folder
+4. show a modal after submitting customMeal.php pages form
+5. Addition page for forgetPassword.php

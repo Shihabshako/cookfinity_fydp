@@ -1,0 +1,242 @@
+/*====== Root Variables ========*/
+
+:root{
+    --clr-primary: #4FB65C;
+    --clr-header: #E8EFF4;
+    --clr-body: #FAFDFF;
+
+    --text-mute: #9B9B9B;
+
+    --fs-sm: 1.25rem;
+    --fs-md: 1.5625rem;
+    --fs-lg: 3.125rem;
+}
+
+/*====== Root Variables ========*/
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0!important;
+    outline-offset: 0!important;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--clr-body)!important;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+}
+/* ======= Custom CSS ======= */
+a{
+    color: #7C7D7D!important;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.text-green{
+    color: var(--clr-primary)!important;
+}
+.text-mute{
+    color: var(--text-mute)!important;
+}
+
+/* ======= Custom CSS ======= */
+
+/* ======= Header ======= */
+
+header{
+    background-color: var(--clr-header);
+}
+.navbar{
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.15);
+}
+.navbar .navbar-brand img{
+    width: 220px;
+}
+.navbar ul .nav-item{
+    transition: 0.3s;
+}
+.navbar ul .nav-item:nth-child(1){
+    margin-left: 0;
+}
+
+ul li.active{
+    background-color: var(--clr-primary)!important;
+}
+ul li.active a{
+    color: #ffffff!important;
+}
+
+.navbar ul .nav-item:hover{
+    background-color: var(--clr-primary)!important;
+}
+.navbar ul .nav-item:hover a{
+    color: #ffffff!important;
+    
+}
+
+header button{
+    background-color: transparent!important;
+    border: unset!important;
+    color: #000!important;
+}
+
+/* ======= Header ======= */
+
+/* ========= become a cook page ========= */
+section{
+    height: 100%;
+}
+
+section .cooking-form{
+    width: 100%;
+    height: 100%;
+}
+
+section .bg-img{
+    background-image: url(../assets/NoPath\ -\ Copy\ \(20\).png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row .form-holder{
+    border-radius: 2rem;
+}
+
+
+
+.text h1{
+    color: var(--text-mute)!important;
+    font-size: var(--fs-md);
+}
+
+
+input, button, .phone-number{
+    border: 2px solid var(--clr-primary)!important;
+}
+
+
+/* ======Changes have been made====== */
+.form-control:focus,.form-control:hover, .phone-number:hover{
+    box-shadow: 0 0 0 0.25rem rgb(79 182 92 / 35%)!important;
+}
+
+/* input:focus{
+    outline: 2px solid red!important;
+    border: 0!important;
+} */
+/* ======Changes have been made====== */
+
+button{
+    background-color: var(--clr-primary)!important;
+    color: #ffffff!important;
+}
+
+.phone-number{
+    background-color: var(--clr-primary)!important;
+}
+
+.phone-number input{
+    border: unset!important;
+}
+
+.phone-number span{
+    background-color: transparent!important;
+    border: unset!important;
+}
+
+.cook{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.cook select{
+    background-color: var(--clr-primary);
+    padding: .55rem .75rem;
+    border: 2px solid var(--clr-primary);
+    width: 100%;
+}
+
+.full-row{
+    grid-column: 1/3;
+}
+
+.full-row button{
+    /* padding-left: 6rem; */
+    /* padding-right: 6rem; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* ========== File Upload Custom Design ============ */
+
+.file-upload-wraper{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.file-upload-wraper::after {
+    content: attr(data-text);
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fafdff;
+    width: 100%;
+    height: 100%;
+    line-height: 1.75;
+    padding: 0.375rem 0.75rem;
+    pointer-events: none;
+    display: block;
+    z-index: 10;
+    color: #6c757d;
+    border-radius: 1.5rem;
+    border: 2px solid var(--clr-primary);
+    overflow: hidden;
+}
+
+.file-upload-wraper::before{
+    content: 'Choose';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    background-color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    height: 100%;
+    padding: 0.375rem 1.5rem;
+    pointer-events: none;
+    display: block;
+    z-index: 15;
+    border-radius: 0px 1.5rem 1.5rem 0px;
+}
+
+/* ========== File Upload Custom Design ============ */
+
+/* ========= Become a cook page ========= */

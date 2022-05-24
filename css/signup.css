@@ -1,0 +1,173 @@
+/*====== Root Variables ========*/
+
+:root{
+    --clr-primary: #4FB65C;
+    --clr-header: #E8EFF4;
+    --clr-body: #FAFDFF;
+
+    --text-mute: #9B9B9B;
+
+    --fs-sm: 1.25rem;
+    --fs-md: 1.5625rem;
+    --fs-lg: 3.125rem;
+}
+
+/*====== Root Variables ========*/
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0!important;
+    outline-offset: 0!important;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--clr-body)!important;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+}
+/* ======= Custom CSS ======= */
+a{
+    color: #7C7D7D!important;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.text-green{
+    color: var(--clr-primary)!important;
+}
+.text-mute{
+    color: var(--text-mute)!important;
+}
+
+/* ======= Custom CSS ======= */
+
+/* ======= Header ======= */
+
+header{
+    background-color: var(--clr-header);
+}
+.navbar{
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.15);
+}
+.navbar .navbar-brand img{
+    width: 220px;
+}
+.navbar ul .nav-item{
+    /* margin-left: 2rem; */
+    transition: 0.3s;
+}
+.navbar ul .nav-item:nth-child(1){
+    margin-left: 0;
+}
+
+ul li.active{
+    background-color: var(--clr-primary)!important;
+}
+ul li.active a{
+    color: #ffffff!important;
+}
+
+.navbar ul .nav-item:hover{
+    background-color: var(--clr-primary)!important;
+}
+.navbar ul .nav-item:hover a{
+    color: #ffffff!important;
+    
+}
+
+header button{
+    background-color: transparent!important;
+    border: unset!important;
+    color: #000!important;
+}
+
+/* ======= Header ======= */
+
+/* ========= Sign Up page ========= */
+section{
+    height: 100%;
+}
+
+section .login-box{
+    width: 100%;
+    height: 100%;
+}
+
+section .bg-img{
+    background-image: url(../assets/Untitled-fgfg1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row .form-holder{
+    border-radius: 2rem;
+}
+
+
+
+.text h1{
+    color: #373838!important;
+    font-size: var(--fs-md);
+}
+
+
+input, button, textarea, .phone-number{
+    border: 2px solid var(--clr-primary)!important;
+}
+
+textarea{
+    border-radius: 2rem!important;
+    padding-top: 2rem!important;
+}
+
+/* ======Changes have been made====== */
+.form-control:focus,.form-control:hover, .phone-number:hover{
+    box-shadow: 0 0 0 0.25rem rgb(79 182 92 / 35%)!important;
+}
+
+/* input:focus{
+    outline: 2px solid red!important;
+    border: 0!important;
+} */
+/* ======Changes have been made====== */
+
+button{
+    background-color: var(--clr-primary)!important;
+    color: #ffffff!important;
+}
+
+.phone-number{
+    background-color: var(--clr-primary)!important;
+}
+
+.phone-number input{
+    border: unset!important;
+}
+
+.phone-number span{
+    background-color: transparent!important;
+    border: unset!important;
+}
+
+/* ========= Sign up page ========= */

@@ -1,0 +1,503 @@
+/*====== Root Variables ========*/
+
+:root{
+    --clr-primary: #4FB65C;
+    --clr-header: #E8EFF4;
+    --clr-body: #FAFDFF;
+
+    --text-mute: #5F6763;
+
+    --fs-sm: 1.25rem;
+    --fs-md: 1.5625rem;
+    --fs-lg: 3.125rem;
+}
+
+/*====== Root Variables ========*/
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0!important;
+    outline-offset: 0!important;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--clr-body);
+    font-family: Arial, sans-serif!important;
+    
+}
+/* ======= Custom CSS ======= */
+a{
+    color: #7C7D7D!important;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.text-green{
+    color: var(--clr-primary)!important;
+}
+.text-mute{
+    color: var(--text-mute)!important;
+}
+
+/* ======= Custom CSS ======= */
+
+
+/* ======= Header ======= */
+
+header{
+    background-color: var(--clr-header);
+}
+.navbar{
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.15);
+}
+.navbar .navbar-brand img{
+    width: 220px;
+}
+.navbar ul .nav-item{
+    transition: 0.3s;
+}
+.navbar ul .nav-item:nth-child(1){
+    margin-left: 0;
+}
+
+ul li.active{
+    background-color: var(--clr-primary)!important;
+}
+ul li.active a{
+    color: #ffffff!important;
+}
+
+.navbar ul .nav-item:hover{
+    background-color: var(--clr-primary)!important;
+}
+.navbar ul .nav-item:hover a{
+    color: #ffffff!important;
+    
+}
+
+/* ======= Header ======= */
+
+/* ========Stcky Header========= */
+
+body{
+    position: relative;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* ========Stcky Header========= */
+
+/* ====== Section 1 ===== */
+
+.section1{
+    position: relative;
+}
+
+.section1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 60%;
+    height: 70%;
+    background: url(../assets/4994fedc83e967607f1e3b3e17525831.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ====== Section 1 ===== */
+/* ====== introduction ===== */
+
+.introduction .heading .text-mute{
+    margin-top: 7rem;
+}
+
+.seach-area .search-template{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--clr-primary);
+    column-gap: 0.7rem;
+    row-gap: 0.7rem;
+}
+
+/* .seach-area .dropdown a{
+    background-color: var(--clr-primary)!important;
+} */
+
+.seach-area select{
+    background-color: var(--clr-primary);
+}
+
+.seach-area button{
+    color: var(--clr-primary);
+}
+
+/* ====== introduction ===== */
+
+
+/* ======= How it works======= */
+
+.section1 .works{
+    margin-top: 9rem;
+}
+
+
+.section1 .works .bg-light{
+    border-radius: 2rem;
+}
+
+/* .works .heading{
+    font-size: var(--fs-md);
+} */
+
+.section1 .works h3{
+    font-size: 1.6875rem;
+    font-weight: 600;
+}
+
+.content .heading{
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.content .icon{
+    height: 120px;
+    width: 120px;
+}
+/* ======= How it works======= */
+
+/* ===== Customized meal ====== */
+
+.customized-meal{
+    position: relative;
+}
+
+.customized-meal::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(-60%, -10%);
+    height: 120%;
+    aspect-ratio: 1;
+    background-image: url(../assets/Untitled-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customized-meal::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate(60%, -10%);
+    height: 120%;
+    aspect-ratio: 1;
+    background-image: url(../assets/Untitled-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customized-meal .container{
+    padding: 10rem 0;
+}
+
+.customized-meal h3,.customized-meal p,.customized-meal span,.customized-meal button{
+    font-weight: 600!important;
+}
+
+.customized-meal button{
+    padding: 0.45rem 2rem;
+    background-color: var(--clr-primary);
+    margin-top: 3rem;
+}
+/* ===== Customized meal ====== */
+
+
+/* ====== Order popular cooks ====== */
+
+
+.order .heading img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.order .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-row-gap: 2.8rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* =====Card-Template===== */
+
+.order .cards-grid .card-template{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #707070;
+    overflow: hidden;
+    max-width: 280px;
+    box-shadow: 7px 8px 10px rgba(0,0,0,0.25);
+}
+
+
+
+
+.details .footer span{
+    font-size: 0.8rem;
+}
+
+/* =====Card-Template===== */
+
+.order button{
+    padding: 0.45rem 2rem;
+    background-color: var(--clr-primary);
+    margin-top: 3.5rem;
+}
+
+
+/* ====== Order popular cooks ====== */
+
+/* ======== meal-soul ======== */
+
+.meal-soul{
+    background-image: url(../assets/NoPath\ -\ Copy\ \(21\).png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.meal-soul .row{
+    padding: 5rem 0;
+}
+
+.meal-soul button{
+    padding: 0.45rem 2rem;
+    background-color: var(--clr-primary);
+    margin-top: 1.5rem;
+}
+
+/* ======== meal-soul ======== */
+
+
+/* ======== About-us ======== */
+
+article p{
+    text-align: justify;
+}
+
+/* ======== About-us ======== */
+
+
+/* ====== Footer ====== */
+
+footer{
+    background-color: var(--clr-primary);
+}
+
+footer .top .logo-holder{
+    max-width: 200px;
+}
+footer .top .social-links{
+    max-width: 280px;
+}
+
+footer .middle ul{
+    list-style: none;
+}
+
+/* ====== Footer ====== */
+
+
+/* ====== UserHome ====== */
+
+p{
+    margin: 0!important;
+}
+
+.cart_icon{
+    cursor: pointer;
+    position: relative;
+}
+
+.cart_icon .cart-toggle{
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+.cart-toggle:hover{
+    background-color: rgba(79, 182, 92,.5);
+    border: 1px solid var(--clr-primary);
+}
+
+.cart-toggle:hover .material-icons-sharp{
+    color: white!important;
+}
+
+
+.cart_icon .material-icons-sharp{
+    color: var(--clr-primary);
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+
+.add-to-cart {
+    border-radius: 1rem;
+    position: absolute;
+    width: 400px;
+    top: 60px;
+    right: -30px;
+    cursor: default;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: translateY(500px);
+}
+
+.add-to-cart::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    right: 30px;
+    background-color: var(--clr-primary);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.showactive {
+    opacity: 1;
+    z-index: 10;
+    transform: translateY(0px);
+}
+
+/* .add-to-cart tr{
+    display: flex;
+    justify-content: center;
+} */
+.add-to-cart td{
+    /* display: flex;
+    align-items: center; */
+    padding: 0.8rem;
+}
+
+.cart-meal-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cart-delivery-fee{
+    border-top: 2px solid white;
+}
+
+.cart-buttons button{
+    color: var(--clr-primary);
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+}
+.cart-buttons button:hover{
+    background-color: var(--clr-primary)!important;
+    border: 2px solid white;
+    color: white;
+}
+
+.cart-total-fee{
+    border-bottom: 2px solid white;
+}
+
+.bg-prime{
+    background-color: var(--clr-primary)!important;
+}
+
+.section1 .works .shadow{
+    border-radius: 2rem;
+    background-color: rgba(79, 182, 92,0.52);
+}
+
+.categories{
+    gap: 1rem;
+}
+
+.categories .category{
+    flex-basis: 22%;
+    transition: 0.3s ease;
+}
+
+.categories .category:hover{
+    box-shadow: 0 0.5rem 1.1rem rgb(0 0 0 / 30%);
+}
+
+.category .icon{
+    height: 40px;
+    width: 40px;
+}
+
+
+.category span{
+    font-size: 1rem;
+}
+
+.card-top .card-img-top{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card-top .card-star-top span{
+    color: var(--clr-primary);
+    font-size: 3.5rem;
+}
+
+.card-details-top .location{
+    font-size: 0.8rem;
+}
+
+
+
+/* ====== UserHome ====== */

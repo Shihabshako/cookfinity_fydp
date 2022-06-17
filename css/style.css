@@ -501,3 +501,34 @@ p{
 
 
 /* ====== UserHome ====== */
+
+
+/* ===== View cart ===== */
+
+.greenCartBox{
+    background-color: #4FB65C;
+    border-radius: 30px;
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.greenCartBox hr{
+    color: white;
+    height: 10px;
+}
+
+.cartButtonGroup{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.cartButtonGroup button{
+    background-color: white;
+    padding: 5px 13px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
